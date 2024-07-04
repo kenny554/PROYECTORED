@@ -35,4 +35,9 @@ public class Graph<T> {
     public List<NodeGraph<T>> getNodes() {
         return nodes;
     }
+
+    // public List<T> Friends (NodeGraph <T> node){
+    // return node.getFriends();
+
+    // }
 }
