@@ -1,4 +1,4 @@
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
 public class NodeGraph<T> {
@@ -7,7 +7,7 @@ public class NodeGraph<T> {
 
     public NodeGraph(T user) {
         this.user = user;
-        this.friends = new LinkedList<>();
+        this.friends = new ArrayList<>();
     }
 
     public T getUser() {
@@ -18,7 +18,7 @@ public class NodeGraph<T> {
         return friends;
     }
 
-    public void addFriends(NodeGraph<T> friendss) {
-        friends.add(friendss);
+    public void addFriend(NodeGraph<T> friend) {
+        friends.add(friend);
     }
 }
